@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="banner">
+        <header>
+            <a href="#" class="logo"><span>My</span>Portfolio_</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I am <span id="text" ></span></h2>
+            <p>Hi, I'm Himanshu Awatar, a passionate B.Tech student in Computer Science from Patna, currently studying at SLIET. I have a strong foundation in Data Structures and Algorithms (DSA) and expertise in full-stack web development. With hands-on experience in IoT projects, I blend theoretical knowledge with practical skills. Eager to contribute innovative solutions, I'm dedicated to continuous learning and growth in the ever-evolving field of technology.</p>
+            <button>Hire Me</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon> Let's Chat</button>
+        </div>
+
+        <img src="colors.png" class="colors">
+        <img src="profile.png" class="men">
+
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon> </a></li>
+
+        </ul>
+
+        <div class="dayNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typingText = new Typed("#text",{
+            strings : ["Himanshu","Programmer","YouTuber"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 1000,
+
+        })
+        let banner = document.querySelector('.banner');
+        let dayNight=document.querySelector('.dayNight');
+        dayNight.onclick=function()
+        {
+            banner.classList.toggle('night')
+        }
+    </script>
+</body>
+</html>
